@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Porsche 911 GT3 (992) | Czysty Motorsport. Homologacja Drogowa.</title>
+  <meta name="description" content="Poznaj Porsche 911 GT3 z wolnossącym silnikiem 4.0 Boxer kręcącym się do 9000 RPM. Zobacz model 3D bez ograniczeń, sprawdź specyfikację techniczną i posłuchaj autentycznego brzmienia wydechu.">
+  <meta name="keywords" content="Porsche 911 GT3, 992 GT3, silnik boxer 4.0, model 3D porsche, dźwięk silnika GT3, specyfikacja 911 GT3">
+  <meta name="author" content="Patrykly">
+
+  <!-- Google Fonts (Plus Jakarta Sans) & Model-Viewer -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Porsche 911 GT3 (992) | Czysty Motorsport">
+  <meta property="og:description" content="Interaktywny model 3D, symulacja aerodynamiki CFD oraz autentyczne brzmienie wolnossącego 4.0 Boxer.">
+  <meta property="og:image" content="assets/banner.jpg">
+  
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="porsche-nav" id="porscheNav">
+    <div class="nav-inner">
+      <a href="#hero" class="porsche-brand">
+        PORSCHE <span class="brand-sub">911 GT3</span>
+      </a>
+
+      <nav class="porsche-menu" id="porscheMenu" aria-label="Główna nawigacja">
+        <ul class="nav-links-list">
+          <li><a href="#hero" class="nav-item is-active">Przegląd</a></li>
+          <li><a href="#specs" class="nav-item">Specyfikacja</a></li>
+          <li><a href="#sound-lab" class="nav-item">Dźwięk Wydechu</a></li>
+          <li><a href="#model-3d" class="nav-item">Model 3D</a></li>
+          <li><a href="#aerodynamics" class="nav-item">Aerodynamika</a></li>
+          <li><a href="#interior" class="nav-item">Wnętrze</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger-porsche" id="burgerToggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-stage">
+      <div class="hero-video-container">
+        <video autoplay muted loop playsinline poster="assets/banner.jpg" class="bg-video">
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-mask"></div>
+      </div>
+
+      <div class="hero-content">
+        <span class="hero-code">911 GT3 • TYP 992</span>
+        <h1 class="hero-model-title">Czas na Czyste Emocje.</h1>
+        <p class="hero-desc">Stworzony na torze Nürburgring Nordschleife. Wolnossąca jednostka 4.0 Boxer, zawieszenie z podwójnymi wahaczami poprzecznymi i tylne skrzydło typu „łabędzia szyja”.</p>
+      </div>
+
+      <a href="#specs" class="scroll-cue" aria-label="Przewiń do danych technicznych">
+        <span>Dane techniczne</span>
+        <div class="scroll-arrow">↓</div>
+      </a>
+    </section>
+
+    <!-- 2. SPECIFICATION SECTION -->
+    <section id="specs" class="porsche-section specs-section">
+      <div class="section-container">
+        
+        <div class="headline-block text-center reveal-on-scroll">
+          <span class="eyebrow">DANE TECHNICZNE & OSIĄGI</span>
+          <h2 class="title-bold">Inżynieria Motorsportu</h2>
+        </div>
+
+        <div class="car-profile-stage reveal-on-scroll">
+          <div class="profile-glow"></div>
+          <img src="assets/front_view.png" alt="Porsche 911 GT3 profil przedni" class="car-front-view" loading="lazy">
+          <div class="dimension-line">
+            <span>Długość: <strong>4 573 mm</strong></span>
+            <span>Rozstaw osi: <strong>2 457 mm</strong></span>
+            <span>Szerokość: <strong>1 852 mm</strong></span>
+          </div>
+        </div>
+
+        <div class="specs-data-grid reveal-on-scroll" id="specsMetrics">
+          <div class="spec-metric">
+            <span class="spec-number"><span class="count-up" data-target="510" data-decimals="0">510</span> <small>KM</small></span>
+            <span class="spec-label">Moc maksymalna (375 kW)</span>
+            <p class="spec-desc">Przy 8 400 obr./min z natychmiastową reakcją na gaz.</p>
+          </div>
+
+          <div class="spec-metric">
+            <span class="spec-number"><span class="count-up" data-target="3.4" data-decimals="1">3.4</span> <small>s</small></span>
+            <span class="spec-label">0–100 km/h (PDK)</span>
+            <p class="spec-desc">Z funkcją Launch Control (3.9 s dla skrzyni manualnej).</p>
+          </div>
+
+          <div class="spec-metric">
+            <span class="spec-number"><span class="count-up" data-target="318" data-decimals="0">318</span> <small>km/h</small></span>
+            <span class="spec-label">Prędkość maksymalna</span>
+            <p class="spec-desc">Osiągana na 7. biegu bez straty docisku aerodynamicznego.</p>
+          </div>
+
+          <div class="spec-metric">
+            <span class="spec-number"><span class="count-up" data-target="9000" data-decimals="0" data-format="space">9 000</span> <small>RPM</small></span>
+            <span class="spec-label">Maksymalne obroty silnika</span>
+            <p class="spec-desc">Legendarna, wolnossąca jednostka wysokoobrotowa.</p>
+          </div>
+        </div>
+
+        <div class="detailed-specs-editorial reveal-on-scroll">
+          <div class="specs-col">
+            <h4>Silnik & Skrzynia</h4>
+            <ul class="specs-list">
+              <li><span>Układ cylindrów</span> <strong>6-cylindrowy Boxer (N/A)</strong></li>
+              <li><span>Pojemność skokowa</span> <strong>3 996 cm³</strong></li>
+              <li><span>Maks. moment obrotowy</span> <strong>470 Nm przy 6 100 obr./min</strong></li>
+              <li><span>Przekładnia</span> <strong>7-biegowa Porsche Doppelkupplung (PDK)</strong></li>
+            </ul>
+          </div>
+          <div class="specs-col">
+            <h4>Podwozie & Aerodynamika</h4>
+            <ul class="specs-list">
+              <li><span>Zawieszenie przednie</span> <strong>Podwójne wahacze poprzeczne</strong></li>
+              <li><span>Tylna oś skrętna</span> <strong>Standard z kalibracją sportową</strong></li>
+              <li><span>Skrzydło tylne</span> <strong>Mocowanie typu „Swan-Neck” (regulowane)</strong></li>
+              <li><span>Masa własna (DIN)</span> <strong>1 435 kg</strong></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. EXHAUST SOUND SECTION -->
+    <section id="sound-lab" class="porsche-section sound-lab-section">
+      <div class="section-container">
+        
+        <div class="headline-block text-center reveal-on-scroll">
+          <span class="eyebrow">AKUSTYKA MOTORSPORTU</span>
+          <h2 class="title-bold">Dźwięk Wydechu GT3</h2>
+          <p class="subtitle-text">Przytrzymaj przycisk startu i poczuj autentyczne brzmienie wolnossącej jednostki 4.0 Boxer.</p>
+        </div>
+
+        <div class="acoustic-control-stage">
+          <div class="sound-rear-stage reveal-on-scroll">
+            <div class="sound-exhaust-glow"></div>
+            <img src="assets/rear_view.avif"
+                alt="Porsche 911 GT3 wydech tył" 
+                class="sound-rear-hero-img">
+          </div>
+
+          <div class="sound-free-center reveal-on-scroll">
+            <span class="sound-tag">4.0L BOXER N/A • 9 000 RPM</span>
+            
+            <audio id="gt3Audio" preload="auto">
+              <source src="assets/porsche-911-gt3rs.mp3" type="audio/mpeg">
+            </audio>
+
+            <button class="hold-audio-btn" id="holdAudioBtn" aria-label="Przytrzymaj, aby posłuchać brzmienia wydechu">
+              <span class="btn-idle-content">
+                <span class="play-icon" aria-hidden="true">▶</span>
+                <span class="btn-label">PRZYTRZYMAJ, ABY POSŁUCHAĆ</span>
+              </span>
+              
+              <div class="waveform-visualizer" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </button>
+
+            <span class="hold-instructions" id="holdInstructions">
+              Naciśnij i przytrzymaj (mysz, dotyk lub Spacja)
+            </span>
+          </div>
+
+          <div class="exhaust-editorial-split reveal-on-scroll">
+            <div class="exhaust-lead">
+              <h4>Układ Wydechowy GT3</h4>
+              <p class="exhaust-desc">Lekki sportowy układ ze stali nierdzewnej z dwiema centralnie umieszczonymi końcówkami w kolorze czarnym. Zoptymalizowany pod kątem redukcji masy o 10 kg i maksymalnego przepływu gazów spalinowych.</p>
+            </div>
+
+            <ul class="exhaust-spec-list">
+              <li>
+                <span>Materiał konstrukcji</span>
+                <strong>Stal żaroodporna 1.4828</strong>
+              </li>
+              <li>
+                <span>Klapki spalinowe</span>
+                <strong>Bezstopniowe sterowanie elektroniczne</strong>
+              </li>
+              <li>
+                <span>Poziom głośności</span>
+                <strong>115 dB (Tor wyścigowy)</strong>
+              </li>
+              <li>
+                <span>Średnica wylotów</span>
+                <strong>2x 100 mm w centralnej osi</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. 3D MODEL SECTION -->
+    <section id="model-3d" class="porsche-section studio-3d-section">
+      <div class="section-container">
+        <div class="headline-block text-center reveal-on-scroll">
+          <span class="eyebrow">WIRTUALNE STUDIO INŻYNIERYJNE</span>
+          <h2 class="title-bold">Interaktywna Eksploracja 360°</h2>
+          <p class="subtitle-text">Poznaj aerodynamiczne linie wyścigowego nadwozia. Obracaj model, zmieniaj lakier oraz wykończenie kutych felg.</p>
+        </div>
+      </div>
+
+      <div class="open-stage-wrapper">
+        <model-viewer 
+          id="gt3Viewer"
+          src="assets/Porsche_911_gt3_3D.glb" 
+          alt="Interaktywny model 3D Porsche 911 GT3" 
+          auto-rotate 
+          camera-controls 
+          touch-action="pan-y"
+          disable-zoom
+          ar 
+          shadow-intensity="1.5"
+          shadow-softness="0.6"
+          exposure="1.0"
+          camera-orbit="35deg 75deg 78%">
+          
+          <!-- Loading bar -->
+          <div class="model-progress-bar" slot="progress-bar">
+            <div class="model-update-bar"></div>
+          </div>
+        </model-viewer>
+        
+        <div class="studio-pedestal"></div>
+      </div>
+
+      <!-- Car paint & rims configurator -->
+      <div class="configurator-controls reveal-on-scroll">
+        <div class="config-group">
+          <span class="config-label">Lakier</span>
+          <div class="color-picker-bar" role="radiogroup" aria-label="Wybór lakieru">
+            <button class="color-btn active" style="background: #f3f4f6;" data-color="0.95, 0.95, 0.95" title="White" aria-label="Lakier White"></button>
+            <button class="color-btn" style="background: #aaadb1;" data-color="0.60, 0.60, 0.60" title="GT Silver" aria-label="Lakier GT Silver"></button>
+            <button class="color-btn" style="background: #d5001c;" data-color="0.5, 0.0, 0.0" title="Guards Red" aria-label="Lakier Guards Red"></button>
+            <button class="color-btn" style="background: #0051ba;" data-color="0.0, 0.31, 0.73" title="Shark Blue" aria-label="Lakier Shark Blue"></button>
+            <button class="color-btn" style="background: #fcd116;" data-color="1.0, 0.82, 0.0" title="Racing Yellow" aria-label="Lakier Racing Yellow"></button>
+            <button class="color-btn" style="background: #111111;" data-color="0.00, 0.00, 0.00" title="Black" aria-label="Lakier Black"></button>
+          </div>
+        </div>
+
+        <div class="config-group">
+          <span class="config-label">Felgi</span>
+          <div class="rims-picker-bar" role="radiogroup" aria-label="Wybór wykończenia felg">
+            <button class="rim-btn active" data-rim="gold">Złote</button>
+            <button class="rim-btn" data-rim="silver">Srebrne</button>
+            <button class="rim-btn" data-rim="black">Czarne</button>
+            <button class="rim-btn" data-rim="carbon">Carbon</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. AERODYNAMICS SECTION -->
+    <section id="aerodynamics" class="porsche-section aerodynamics-section">
+      <div class="section-container">
+        
+        <div class="headline-block text-center reveal-on-scroll">
+          <span class="eyebrow">PORSCHE MOTORSPORT ENGINEERING</span>
+          <h2 class="title-bold">Anatomia Aerodynamiki</h2>
+          <p class="subtitle-text">Kliknij pulsujące punkty na sylwetce 911 GT3, aby odkryć innowacje torowe generujące do 385 kg docisku.</p>
+        </div>
+
+        <div class="aero-interactive-stage reveal-on-scroll">
+          <div class="aero-ambient-glow"></div>
+          
+          <div class="aero-car-container">
+            <img src="assets/side_view.png" 
+                 alt="Porsche 911 GT3 profil boczny"
+                 class="aero-car-image">
+
+            <!-- Wind tunnel -->
+            <svg class="wind-tunnel-svg" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="aeroSmokeGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0" />
+                  <stop offset="18%" stop-color="#38bdf8" stop-opacity="0.85" />
+                  <stop offset="55%" stop-color="#7dd3fc" stop-opacity="0.9" />
+                  <stop offset="85%" stop-color="#0284c7" stop-opacity="0.35" />
+                  <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            
+              <!-- Upperbody airflow -->
+              <path class="aero-ribbon ribbon-laminar-1" d="M 1020,225 C 820,215 650,150 450,142 S 140,170 -20,170" />
+              <path class="aero-ribbon ribbon-laminar-2" d="M 1020,255 C 830,245 660,175 455,156 S 150,184 -20,184" />
+
+              <!-- Body-surface airflow 1: over the hood -> windshield -> roof -> OVER the wing -->
+              <path class="aero-ribbon ribbon-roof" d="M 1020,310 C 930,308 860,268 775,244 C 705,225 645,232 595,208 C 545,184 495,165 440,165 C 350,165 260,182 165,188 C 95,192 35,190 -20,188" />
+
+              <!-- Body-surface airflow 2: over the hood -> windshield -> roof -> flows UNDER the swan-neck wing -->
+              <path class="aero-ribbon ribbon-wing" d="M 1020,318 C 930,316 860,274 775,250 C 705,231 645,236 595,214 C 545,190 495,170 440,170 C 355,170 285,204 195,222 C 135,230 60,228 -20,224" />
+
+              <!-- Underbody airflow (Venturi effect -> upward discharge from the diffuser) -->
+              <path class="aero-ribbon ribbon-diffuser-1" d="M 1020,400 C 860,400 720,402 520,402 S 220,402 150,392 C 95,384 45,355 -20,330" />
+              <path class="aero-ribbon ribbon-diffuser-2" d="M 1020,410 C 860,410 720,412 520,412 S 225,410 160,400 C 105,392 55,368 -20,348" />
+            </svg>
+
+            <!-- Clickable points -->
+            <button class="aero-hotspot-pin" style="top: 50%; left: 80%;" data-spot="naca" aria-label="Wloty NACA">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">1</span>
+            </button>
+
+            <button class="aero-hotspot-pin" style="top: 65%; left: 75%;" data-spot="suspension" aria-label="Zawieszenie 911 RSR">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">2</span>
+            </button>
+
+            <button class="aero-hotspot-pin active" style="top: 42%; left: 10%;" data-spot="wing" aria-label="Skrzydło Swan-Neck">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">3</span>
+            </button>
+
+            <button class="aero-hotspot-pin" style="top: 73%; left: 10%;" data-spot="diffuser" aria-label="Dyfuzor i podłoga">
+              <span class="pin-pulse"></span>
+              <span class="pin-dot">4</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Aerodynamic telemetry panel -->
+        <div class="aero-dossier-editorial reveal-on-scroll" id="aeroDossier">
+          <div class="dossier-header">
+            <div>
+              <span class="dossier-kicker" id="aeroKicker">INNOWACJA #3 • TYLNA OŚ</span>
+              <h3 class="dossier-title" id="aeroTitle">Skrzydło typu „Łabędzia Szyja” (Swan-Neck)</h3>
+            </div>
+            <div class="dossier-stat-badge">
+              <span class="stat-number" id="aeroStat">+50%</span>
+              <span class="stat-label" id="aeroStatLabel">Większy Docisk</span>
+            </div>
+          </div>
+
+          <p class="dossier-desc" id="aeroDesc">
+            Mocowanie skrzydła od góry eliminuje zakłócenia przepływu powietrza na kluczowej, dolnej powierzchni płata. Rozwiązanie przeniesione prosto z wyścigowego 911 RSR zapewnia maksymalną stabilność przy dohamowaniach z prędkości powyżej 260 km/h.
+          </p>
+
+          <div class="dossier-telemetry-row">
+            <div class="d-chip">
+              <span>Maks. siła docisku</span>
+              <strong id="aeroChip1">385 kg przy 200 km/h</strong>
+            </div>
+            <div class="d-chip">
+              <span>Regulacja kąta</span>
+              <strong id="aeroChip2">4 stopnie nastawu torowego</strong>
+            </div>
+            <div class="d-chip">
+              <span>Materiał płata</span>
+              <strong id="aeroChip3">Włókno węglowe (CFRP)</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="interior" class="porsche-section interior-section">
+      <div class="section-container">
+        <div class="filmstrip-header reveal-on-scroll">
+          <div class="headline-block">
+            <span class="eyebrow">KOKPIT & ERGONOMIA TOROWA</span>
+            <h2 class="title-bold">Stworzony dla Kierowcy</h2>
+          </div>
+    
+          <div class="filmstrip-nav">
+            <button class="deck-nav-btn" id="filmstripPrev" aria-label="Przewiń w lewo">←</button>
+            <button class="deck-nav-btn" id="filmstripNext" aria-label="Przewiń w prawo">→</button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Full-width horizontal track -->
+      <div class="filmstrip-track reveal-on-scroll" id="filmstripTrack">
+        
+        <!-- Frame 01: Wide (16:10) -->
+        <article class="filmstrip-slide slide-wide">
+          <div class="filmstrip-media">
+            <img src="assets/seats.avif" alt="Fotele kubełkowe z włókna węglowego Porsche 911 GT3" loading="lazy">
+            <div class="filmstrip-mask"></div>
+          </div>
+          <div class="filmstrip-caption">
+            <span class="filmstrip-num">01</span>
+            <h3>Fotele kubełkowe z CFRP</h3>
+            <p>Skorupa z włókna węglowego oszczędza 11 kg masy i gwarantuje pełne trzymanie boczne na torze.</p>
+          </div>
+        </article>
+    
+        <!-- Frame 02: Tall (4:5) -->
+        <article class="filmstrip-slide slide-tall">
+          <div class="filmstrip-media">
+            <img src="assets/steering_wheel.jpg" alt="Kierownica GT Sport w wykończeniu Race-Tex" loading="lazy">
+            <div class="filmstrip-mask"></div>
+          </div>
+          <div class="filmstrip-caption">
+            <span class="filmstrip-num">02</span>
+            <h3>Kierownica GT Sport Race-Tex</h3>
+            <p>Średnica 360 mm, antypoślizgowe wykończenie i znacznik godziny 12.</p>
+          </div>
+        </article>
+    
+        <!-- Frame 03: Medium (5:4) -->
+        <article class="filmstrip-slide slide-medium">
+          <div class="filmstrip-media">
+            <img src="assets/dashboard.jpeg" alt="Zestaw wskaźników 911 GT3 z obrotomierzem do 9000 RPM" loading="lazy">
+            <div class="filmstrip-mask"></div>
+          </div>
+          <div class="filmstrip-caption">
+            <span class="filmstrip-num">03</span>
+            <h3>Track Screen & 9 000 RPM</h3>
+            <p>Jednym przyciskiem ukrywa zbędne dane, zostawiając wyłącznie telemetrię torową.</p>
+          </div>
+        </article>
+    
+        <!-- Frame 04: Tall (4:5) -->
+        <article class="filmstrip-slide slide-tall">
+          <div class="filmstrip-media">
+            <img src="assets/gear_shift_lever.avif" alt="Pakiet Clubsport oraz selektor biegów PDK" loading="lazy">
+            <div class="filmstrip-mask"></div>
+          </div>
+          <div class="filmstrip-caption">
+            <span class="filmstrip-num">04</span>
+            <h3>Pakiet Clubsport & PDK</h3>
+            <p>Stalowa klatka bezpieczeństwa i krótki selektor przełożeń inspirowany skrzynią manualną.</p>
+          </div>
+        </article>
+
+        <!-- Frame 05: Wide (16:10) -->
+        <article class="filmstrip-slide slide-wide">
+          <div class="filmstrip-media">
+            <img src="assets/driver_perspective.webp" alt="Kokpit Porsche 911 GT3 z perspektywy kierowcy" loading="lazy">
+            <div class="filmstrip-mask"></div>
+          </div>
+          <div class="filmstrip-caption">
+            <span class="filmstrip-num">05</span>
+            <h3>Kokpit zorientowany na tor</h3>
+            <p>Przełączniki trybów jazdy bezpośrednio na kierownicy, selektor PDK oraz zegar Sport Chrono w polu widzenia kierowcy.</p>
+          </div>
+        </article>
+
+      </div>
+    
+      <!-- Scroll progress bar -->
+      <div class="section-container">
+        <div class="filmstrip-progress-bar">
+          <div class="filmstrip-progress-fill" id="filmstripProgress"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PORSCHE FOOTER -->
+  <footer class="porsche-footer">
+    <div class="section-container">
+      <div class="footer-top">
+        <span class="footer-brand">PORSCHE 911 GT3</span>
+        <div class="footer-telemetry-note">
+          Wartości zużycia paliwa i emisji CO₂ (WLTP): Średnie zużycie paliwa: 12.9 – 13.0 l/100 km; Emisja CO₂: 293 – 294 g/km.
+        </div>
+        <div class="footer-telemetry-note">
+          <p>Projekt koncepcyjny o charakterze edukacyjnym (portfolio) — niezwiązany z Porsche AG.</p>
+          <p>Model 3D: <a href="https://sketchfab.com/3d-models/2025-porsche-911-gt3-992-2-1503f8d08f154ec7ab52f95a99c55134" target="_blank" rel="noopener noreferrer">Sketchfab</a>.</p> 
+          <p>Zdjęcia i materiały wideo: 
+            <a href="https://www.porsche.com/poland/models/911/911-gt3-models/911-gt3/" target="_blank" rel="noopener noreferrer">Porsche</a>, 
+            <a href="https://www.youtube.com/watch?v=dyHSbRD0_sE" target="_blank" rel="noopener noreferrer">Youtube</a>.
+          </p> 
+          <p>Dźwięk wydechu: <a href="https://www.myinstants.com/en/instant/porsche-911-gt3rs-61628/" target="_blank" rel="noopener noreferrer">Myinstants</a>.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prezentacja modelu Porsche 911 GT3. Projekt koncepcyjny do portfolio.</p>
+        <div class="footer-nav-tags">
+          <a href="#hero">Przegląd</a>
+          <a href="#specs">Specyfikacja</a>
+          <a href="#sound-lab">Dźwięk Wydechu</a>
+          <a href="#model-3d">Model 3D</a>
+          <a href="#aerodynamics">Aerodynamika</a>
+          <a href="#interior">Wnętrze</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
