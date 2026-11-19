@@ -4,6 +4,8 @@ An interactive, editorial-style landing page dedicated to the **Porsche 911 GT3 
 
 > **Live Demo:** [View Live on Vercel](https://porsche-911-gt3-showcase.vercel.app)
 
+![Porsche 911 GT3 Showcase](assets/banner.jpg)
+
 ---
 
 ## Key Features
